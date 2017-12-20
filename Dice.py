@@ -1,5 +1,6 @@
 import sys
 from random import randint
+
 def main():
 	# Taking user input for minimum and maximum faces of dice
 	try:
@@ -18,13 +19,14 @@ def main():
 		print 'Max face value should be greater then or equl to minimum face'
 		main()
 	else:
-		# retieve randon number
+		# retieve Dice value
 	    random_num = get_random(min_face, max_face)
 	    print 'your dice value is: ', random_num
 
 # function to generate randon number
 def get_random(min_dice_value, max_dice_value):
 	return (randint(min_dice_value, max_dice_value))
+
 # function to check if input number is not zero
 def check_input(number):
 	if number == 0:
@@ -35,16 +37,4 @@ def check_input(number):
 
 if __name__ == '__main__':
 	print '***Welcome to rolling Dice Game!***'
-	main()
-
-			
-	
-
-	
-
-
-
-
-
-		
-			
+	main()			
